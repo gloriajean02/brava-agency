@@ -1,0 +1,209 @@
+/* * {
+    outline: #c41230 solid 2px;
+} */
+
+/* mainNav en pantallas pequeñas (menos de 992px) */
+nav#mainNav {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    border-bottom: 1px solid transparent;
+    background: white;
+}
+
+nav#mainNav a {
+    color: black !important;
+
+}
+
+
+/* mainNav en pantallas grandes (más de 992px) */
+@media (min-width:992px) {
+    nav#mainNav {
+        background: transparent !important;
+    }
+
+    nav#mainNav a {
+        color: white !important;
+    }
+
+    nav#mainNav .dropdown-menu .dropdown-item {
+        color: black !important;
+    }
+
+}
+
+#line1,
+#line2 {
+    font-family: "Croissant One", serif;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.1;
+    font-size: 2rem;
+}
+
+
+#spice {
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    color: #c41230;
+    font-size: 25rem;
+    line-height: 0.8;
+    font-weight: 400;
+    margin: 0;
+}
+
+#sobre-brava {
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    color: #c41230;
+    font-size: 10rem;
+    line-height: 0.8;
+    font-weight: 400;
+    margin: 0;
+
+}
+
+/* Pantallas medianas o menores (md y abajo) */
+@media (max-width: 991.98px) {
+
+    #line1,
+    #line2 {
+        font-size: 1.5rem;
+    }
+
+    #spice {
+        font-size: 20rem;
+    }
+
+    #sobre-brava {
+        font-size: 8rem;
+    }
+}
+
+/* Pantallas pequeñas (sm y abajo) */
+@media (max-width: 767.98px) {
+
+    #line1,
+    #line2 {
+        font-size: 1.2rem;
+    }
+
+    #spice {
+        font-size: 15rem;
+    }
+
+    #sobre-brava {
+        font-size: 6rem;
+    }
+}
+
+/* Pantallas muy pequeñas (xs: móviles pequeños) */
+@media (max-width: 575.98px) {
+
+    #line1,
+    #line2 {
+        font-size: 1rem;
+    }
+
+    #spice {
+        font-size: 10rem;
+    }
+
+    #sobre-brava {
+        font-size: 6rem;
+    }
+}
+
+
+a .navbar-brand {
+    margin-left: 0px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+header#mainHeader {
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    background: no-repeat center center;
+    background-size: cover;
+    color: white;
+
+}
+
+#footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.carousel-caption h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    line-height: 0.6;
+}
+
+@media (max-width: 768px) {
+    #titulo-carousel {
+        font-size: 1.75rem;
+        line-height: 0.4;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    .img-camara {
+        max-width: 320px;
+    }
+
+}
+
+/* ✅ Solo en pantallas grandes: fondo transparente al inicio, letras blancas */
+@media (min-width: 992px) {
+    nav#mainNav {
+        background: transparent !important;
+    }
+
+    nav#mainNav .nav-link,
+    nav#mainNav .brand-text {
+        color: white !important;
+    }
+
+    nav#mainNav.navbar-scroll {
+        background-color: white !important;
+    }
+
+    nav#mainNav.navbar-scroll .nav-link,
+    nav#mainNav.navbar-scroll .brand-text {
+        color: black !important;
+    }
+
+}
+
+.img-equipo {
+    max-width: 250px;
+    padding-bottom: 20px;
+
+}
+
+.empleado {
+    padding: 20px;
+    max-width: 300px;
+}
+
+span {
+    color: #c41230;
+}
+
+.servicio {
+    color: black;
+    text-decoration: none;
+
+}
+
+.card-body a {
+    text-decoration: none;
+}
+

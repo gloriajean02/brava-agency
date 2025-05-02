@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brava Agency</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Croissant+One&display=swap"
+        rel="stylesheet">
+
+    <link href="./bootstrap/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="images/logo/logo.png">
+</head>
+
+<body>
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top transition-navbar" id="mainNav">
+        <div class="container-fluid">
+            <div class="navbar-brand d-flex align-items-center">
+                <a href="index.html" class="navbar-brand d-flex align-items-center" style="text-decoration: none;">
+                    <img src="images/logo/logo.png" alt="logo" style="max-width: 80px;">
+                    <span class="brand-text"
+                        style="font-family: Bebas Neue, sans-serif; font-size: 2rem; color: inherit;">BRAVA
+                        AGENCY</span>
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseNavbarContent">
+                <i class="bi bi-list" style="font-size: 2rem; color: black;"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapseNavbarContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-2">
+                        <a href="#" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown mx-2">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">¿Qué hacemos?</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#ultimos-proyectos" class="dropdown-item">Últimos proyectos</a></li>
+                            <li><a href="#nuestros-servicios" class="dropdown-item">Nuestros servicios</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown mx-2">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sobre Brava</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="sobre-brava/sobre-brava.html" class="dropdown-item">Conócenos</a></li>
+                            <li><a href="sobre-brava/sobre-brava.html#equipo" class="dropdown-item">El equipo</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalContacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cabecera -->
+    <header id="mainHeader" style="background-color: #ff87b2">
+        <div class="container position-relative px-5 px-lg-5">
+            <div class="row">
+                <div id="poster" class="mx-auto col-lg-10 col-xl-8 col-md-12">
+                    <p id="line1">Add a</p>
+                    <p id="line2" class="mb-4">little bit of</p>
+                    <h1 id="spice" class="">SPICE</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección bienvenida -->
+    <section class="container position-relative" id="bienvenida">
+        <div class="row">
+            <div class="d-flex justify-content-start g-5">
+                <h2>Somos una agencia<br>de <span>publicidad emocional</span>.</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container mb-3 mt-4">
+                <img src="images/recursos/claqueta.png" alt="equipo" class="d-block w-100 rounded">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 gx-5">
+                <a href="sobre-brava/sobre-brava.html" class="btn btn-md btn-outline-danger">Conócenos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección últimos proyectos -->
+    <section id="ultimos-proyectos" class="container position-relative">
+        <div class="row">
+            <div class="d-flex justify-content-start g-5">
+                <h2>Ideas que <span>pican</span>.<br>Marcas que <span>perduran</span>.</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container mb-5 mt-4">
+                <div class="carousel slide rounded overflow-hidden" id="carouselExample">
+                    <div class="carousel-inner">
+                        <!-- colocamos en la primera active para que sea la primera que se va a mostrar en la diapositiva -->
+                        <!-- con d-block w-100 aseguramos que las imagenes llenen todo el ancho -->
+                        <div class="carousel-item active">
+                            <img src="images/campaigns/JB.png" alt="campaign" class="d-block w-100">
+                            <div class="carousel-caption p-2">
+                                <h1 id="titulo-carousel">J&B</h1>
+                                <p>She</p>
+                                <a href="#" class="btn btn-sm btn-outline-light mb-3" data-bs-toggle="modal"
+                                    data-bs-target="#modalProyecto1">Ver proyecto</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/campaigns/wallapop.png" alt="campaign" class="d-block w-100">
+                            <div class="carousel-caption p-2">
+                                <h1 id="titulo-carousel">Wallapop</h1>
+                                <p>Lo hecho, hecho está</p>
+                                <a href="#" class="btn btn-sm btn-outline-light mb-3" data-bs-toggle="modal"
+                                    data-bs-target="#modalProyecto2">Ver proyecto</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/campaigns/DGT.png" alt="campaign" class="d-block w-100">
+                            <div class="carousel-caption p-2">
+                                <h1 id="titulo-carousel">DGT</h1>
+                                <p>Viva vivir</p>
+                                <a href="#" class="btn btn-sm btn-outline-light mb-3" data-bs-toggle="modal"
+                                    data-bs-target="#modalProyecto3">Ver proyecto</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- rayitas de debajo del carrusel -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0"
+                            class="active"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+                    </div>
+                    <!-- Botones de control con alineación centrada en la imagen -->
+                    <div class="carousel-controls">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals proyectos -->
+    <!----------------------- Modal Proyecto 1 -->
+    <div class="modal fade" id="modalProyecto1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title"><em>She</em> para J&B</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/dFW2U1vcf84?autoplay=1&mute=1" title="Video proyecto"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------- Modal Proyecto 2 -->
+    <div class="modal fade" id="modalProyecto2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title"><em>Lo hecho, hecho está</em> para Wallapop</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/8c1O-tfhDWE?autoplay=1&mute=1" title="Video proyecto"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------- Modal Proyecto 3 -->
+    <div class="modal fade" id="modalProyecto3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title"><em>Viva vivir</em> para DGT</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/0_wbY29n-_0?autoplay=1&mute=1" title="Video proyecto"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección servicios -->
+    <section class="container position-relative" id="nuestros-servicios">
+        <div class="row">
+            <div class="d-flex justify-content-start gx-5 gy-2 mb-3">
+                <h2>Ayudamos a las marcas a <span>conectar con la gente</span>.<br>
+                    Creamos campañas valientes, con carácter y propósito.</h2>
+            </div>
+        </div>
+        <div class="row gx-4 gy-4 row-cols-1 row-cols-md-3">
+            <div class="col">
+                <div class="card rounded overflow-hidden" style="height: 330px;">
+                    <div class="card-header p-0">
+                        <img src="images/recursos/rodaje.png" alt="a" class="w-100"
+                            style="height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modalPublicidad">
+                            <h3 class="servicio fs-4">Campañas de publicidad emocional</h3>
+                            <p><span>+</span></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card rounded overflow-hidden" style="height: 330px;">
+                    <div class="card-header p-0">
+                        <img src="images/recursos/social-media.png" alt="a" class="w-100"
+                            style="height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modalRedes">
+                            <h3 class="servicio fs-4">Creación de contenido en redes sociales</h3>
+                            <p><span>+</span></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card rounded overflow-hidden" style="height: 330px;">
+                    <div class="card-header p-0">
+                        <img src="images/recursos/branding.png" alt="a" class="w-100"
+                            style="height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modalMarca">
+                            <h3 class="servicio fs-4">Posicionamiento y estrategia de marca</h3>
+                            <p><span>+</span></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-6 gx-5">
+                <a href="#" class="btn btn-md btn-outline-danger">¿Hablamos?</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Modals servicios -->
+
+    <!------------------------ Modal 1 -->
+    <div class="modal fade" id="modalPublicidad" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Campañas de publicidad emocional</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Contamos historias que tocan el corazón. Diseñamos campañas que <span>no solo promocionan, sino que
+                        emocionan</span>. Porque una marca que se siente, se recuerda.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------ Modal 2 -->
+    <div class="modal fade" id="modalRedes" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Gestión de redes sociales y creación de contenido</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Convertimos tus redes en escenarios donde tu marca brilla. Creamos contenido auténtico, creativo y
+                    relevante que <span>conecta, inspira y genera comunidad</span>.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------ Modal 3 -->
+    <div class="modal fade" id="modalMarca" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Posicionamiento y estrategia de marca</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Damos forma a lo que hace única a tu marca. Construimos una estrategia con <span>alma, voz propia y
+                        propósito claro</span>, para que dejes huella allá donde vayas.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flecha para subir -->
+    <section class="container position-relative">
+        <div class="d-flex justify-content-start m-5">
+            <a href="#" style="font-size: 2rem; color: black;">
+                <i class="bi bi-arrow-up" id="back-top"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="container-fluid" id="footer" style="background-color: #c41230;">
+        <div class="d-flex flex-column flex-md-row py-5">
+            <div class="d-flex flex-column px-5 py-3">
+                <a href="#nuestros-servicios">Servicios</a>
+                <a href="#ultimos-proyectos">Últimos proyectos</a>
+                <a href="sobre-brava/sobre-brava.html">Sobre Brava</a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modalContacto">Contacto</a>
+            </div>
+            <div class="d-flex flex-column px-5 py-3 flex-md-grow-1">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modalLegal">Aviso legal</a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modalPrivacidad">Política de privacidad</a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#modalCookies">Política de cookies</a>
+            </div>
+            <div class="d-flex flex-md-column flex-row py-3 px-5">
+                <div>
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        <i class="bi bi-linkedin" style="font-size: 1.5rem;"></i>
+                    </a>
+                </div>
+                <div class="mx-3 mx-md-0">
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <i class="bi bi-youtube" style="font-size: 1.5rem;"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container-fluid d-flex justify-content-center text-bg-dark p-2">
+        <p>© Brava Agency 2025</p>
+    </div>
+
+
+    <!-- Modals Footer -->
+    <!-------------------- Modal Aviso Legal -->
+    <div class="modal fade" id="modalLegal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Aviso Legal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Titularidad del sitio web</strong><br>
+                        En cumplimiento con el deber de información recogido en el artículo 10 de la Ley 34/2002, de 11
+                        de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico, se informa
+                        que este sitio web es titularidad de:</p>
+
+                    <p><strong>Nombre comercial:</strong> Brava Agency<br>
+                        <strong>Correo electrónico de contacto:</strong> hola@bravaagency.com<br>
+                        <strong>Domicilio social:</strong> Calle Literato Azorín, 12, Bajo, 46006 Valencia
+                    </p>
+
+                    <p><strong>Condiciones de uso</strong><br>
+                        El acceso y navegación en este sitio web implica el conocimiento y aceptación de las presentes
+                        condiciones legales. El usuario se compromete a utilizar el sitio web, sus contenidos y
+                        servicios de conformidad con la ley, la moral, el orden público y las presentes condiciones.</p>
+
+                    <p><strong>Propiedad intelectual e industrial</strong><br>
+                        Todos los contenidos de este sitio web, incluyendo textos, imágenes, diseños, logotipos, marcas,
+                        código fuente y software, están protegidos por la normativa de propiedad intelectual e
+                        industrial. Queda prohibida su reproducción, distribución o comunicación pública sin la
+                        autorización expresa de Brava Agency.</p>
+
+                    <p><strong>Responsabilidad</strong><br>
+                        Brava Agency no se responsabiliza de los errores u omisiones en los contenidos ni de los daños
+                        derivados del uso del sitio web, ni por la actuación de terceros mediante enlaces o contenidos
+                        compartidos desde esta plataforma.</p>
+
+                    <p><strong>Modificaciones</strong><br>
+                        Brava Agency se reserva el derecho a modificar, actualizar o eliminar el contenido del sitio
+                        web, así como las condiciones de uso, en cualquier momento y sin previo aviso.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------- Modal Política de Privacidad -->
+    <div class="modal fade" id="modalPrivacidad" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Política de privacidad</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Política de Privacidad</strong><br>
+                        En cumplimiento del Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de
+                        abril de 2016 (RGPD), y de la Ley Orgánica 3/2018, de Protección de Datos Personales y garantía
+                        de los derechos digitales, informamos a los usuarios de este sitio web sobre la política de
+                        tratamiento y protección de datos personales.</p>
+
+                    <p><strong>Responsable del tratamiento</strong><br>
+                        Nombre comercial: Brava Agency<br>
+                        Correo electrónico de contacto: hola@bravaagency.com<br>
+                        Domicilio social: Calle Literato Azorín, 12, Bajo, 46006 Valencia</p>
+
+                    <p><strong>Finalidad del tratamiento</strong><br>
+                        Los datos personales recogidos a través de los formularios de contacto o medios similares se
+                        utilizan exclusivamente para responder a las consultas, facilitar información solicitada y, si
+                        procede, enviar comunicaciones relacionadas con nuestros servicios.</p>
+
+                    <p><strong>Legitimación</strong><br>
+                        La base legal para el tratamiento de sus datos es el consentimiento expreso del usuario al
+                        facilitar sus datos a través del formulario correspondiente o al enviar un correo electrónico.
+                    </p>
+
+                    <p><strong>Conservación de los datos</strong><br>
+                        Los datos personales se conservarán únicamente durante el tiempo necesario para cumplir con la
+                        finalidad para la que fueron recabados, y mientras el usuario no solicite su supresión.</p>
+
+                    <p><strong>Derechos de los usuarios</strong><br>
+                        El usuario puede ejercer sus derechos de acceso, rectificación, supresión, oposición, limitación
+                        y portabilidad mediante solicitud escrita al correo electrónico hola@bravaagency.com, incluyendo
+                        una copia de su documento de identidad.</p>
+
+                    <p><strong>Medidas de seguridad</strong><br>
+                        Brava Agency adopta las medidas técnicas y organizativas necesarias para garantizar la seguridad
+                        de los datos personales y evitar su alteración, pérdida, tratamiento o acceso no autorizado.</p>
+
+                    <p><strong>Cesión de datos a terceros</strong><br>
+                        No se cederán datos personales a terceros, salvo obligación legal o en los casos necesarios para
+                        la prestación del servicio, en cuyo caso se informará previamente al usuario.</p>
+
+                    <p><strong>Modificación de la política de privacidad</strong><br>
+                        Brava Agency se reserva el derecho a modificar la presente política para adaptarla a novedades
+                        legislativas o jurisprudenciales. Cualquier cambio será publicado en esta misma página.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------- Modal Política de Cookies -->
+    <div class="modal fade" id="modalCookies" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Política de cookies</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Política de Cookies</strong><br>
+                        Este sitio web utiliza cookies propias y de terceros para mejorar la experiencia del usuario,
+                        analizar la navegación y ofrecer contenidos adaptados a sus intereses.</p>
+
+                    <p><strong>¿Qué son las cookies?</strong><br>
+                        Las cookies son pequeños archivos de texto que se almacenan en el dispositivo del usuario al
+                        visitar una página web. Sirven para recordar información sobre su visita, como el idioma
+                        preferido o las opciones seleccionadas, lo que puede facilitar su próxima visita y hacer que el
+                        sitio le resulte más útil.</p>
+
+                    <p><strong>Tipos de cookies utilizadas</strong><br>
+                    <ul>
+                        <li><strong>Cookies técnicas:</strong> necesarias para el funcionamiento del sitio web y la
+                            navegación.</li>
+                        <li><strong>Cookies de análisis:</strong> permiten cuantificar el número de usuarios y realizar
+                            medición y análisis estadístico del uso del sitio.</li>
+                        <li><strong>Cookies de personalización:</strong> permiten recordar información para que el
+                            usuario acceda al servicio con ciertas características (idioma, tipo de navegador, etc.).
+                        </li>
+                    </ul>
+                    </p>
+
+                    <p><strong>Cookies de terceros</strong><br>
+                        Este sitio web puede utilizar servicios de terceros que recopilan información con fines
+                        estadísticos o de uso del sitio por parte del usuario. Estos servicios están gestionados por
+                        Google Analytics u otras herramientas similares.</p>
+
+                    <p><strong>Gestión de cookies</strong><br>
+                        El usuario puede permitir, bloquear o eliminar las cookies instaladas en su equipo mediante la
+                        configuración de las opciones del navegador que utilice. A continuación se indican enlaces a las
+                        páginas de ayuda de los navegadores más comunes:
+                    <ul>
+                        <li>Google Chrome: <a href="https://support.google.com/chrome/answer/95647"
+                                target="_blank">Configuración de cookies</a></li>
+                        <li>Mozilla Firefox: <a
+                                href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web"
+                                target="_blank">Gestión de cookies</a></li>
+                        <li>Safari: <a href="https://support.apple.com/es-es/guide/safari/sfri11471/mac"
+                                target="_blank">Preferencias de privacidad</a></li>
+                        <li>Microsoft Edge: <a
+                                href="https://support.microsoft.com/es-es/help/4027947/microsoft-edge-delete-cookies"
+                                target="_blank">Eliminar cookies</a></li>
+                    </ul>
+                    </p>
+
+                    <p><strong>Consentimiento</strong><br>
+                        Al continuar navegando por este sitio web, el usuario acepta el uso de cookies conforme a los
+                        términos establecidos en la presente Política de Cookies. Si no está de acuerdo, puede cambiar
+                        la configuración de su navegador o abandonar el sitio.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal contacto -->
+    <div class="modal fade" id="modalContacto" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content bg-danger-subtle">
+                <div class="modal-header border-0">
+                    <h2 class="modal-title text-danger">¿Hablamos?</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>¡Nos encantaría saber de ti! Ya sea una idea brillante, una pregunta o simplemente para saludar,
+                        estamos aquí para escucharte. Escríbenos y te responderemos con la mayor ilusión.</p>
+                    <div class="container my-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <form action="#" id="formulario-contacto">
+                                    <div class="row px-3 pt-3">
+                                        <p>Nombre</p>
+                                    </div>
+                                    <div class="row px-3">
+                                        <input type="text" class="form-control" placeholder="Escribe tu nombre..."
+                                            id="nombre" required>
+                                    </div>
+                                    <div class="row px-3 pt-3">
+                                        <p>Asunto</p>
+                                    </div>
+                                    <div class="row px-3">
+                                        <input type="text" class="form-control" style="width: 100%; max-width: 100%;"
+                                            placeholder="Escribe un asunto..." id="asunto" required>
+                                    </div>
+                                    <div class="row px-3 pt-3">
+                                        <p>Mensaje</p>
+                                    </div>
+                                    <div class="row px-3">
+                                        <textarea type="text" class="form-control" placeholder="Escribe tu mensaje..."
+                                            id="mensaje" required></textarea>
+                                    </div>
+                                    <div class="row px-3 pt-3">
+                                        <p>Email</p>
+                                    </div>
+                                    <div class="row px-3">
+                                        <input type="text" class="form-control" style="width: 100%; max-width: 100%;"
+                                            placeholder="Escribe tu email..." id="email" required>
+                                    </div>
+                                    <div class="row px-3 pt-3">
+                                        <div class="form-group form-check">
+                                            <input type="checkbox" class="form-check-input" id="checkPrivacidad"
+                                                required>
+                                            <label class="form-check-label" for="checkPrivacidad">Acepto la política de
+                                                privacidad</label>
+                                            <i class="bi bi-info-circle" style="color: red;" data-bs-toggle="popover"
+                                                data-bs-placement="top"
+                                                data-bs-content="En cumplimiento con la legislación vigente, Brava Agency recoge y procesa tus datos de forma segura. Puedes consultar nuestra política de privacidad completa en el footer de nuestro sitio web."
+                                                data-bs-html="true"></i>
+                                        </div>
+                                    </div>
+                                    <div class="row p-3">
+                                        <button class="btn btn-danger w-100">Enviar</button>
+                                    </div>
+                                    <div id="formAlert" class="alert alert-danger d-none" role="alert">
+                                        Por favor, completa todos los campos correctamente.
+                                    </div>
+                                    <div id="formSuccess" class="alert alert-success d-none" role="alert">
+                                        ¡Gracias! Tu mensaje ha sido enviado correctamente.
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
