@@ -18,8 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // Activa el popover para todos los elementos que lo tengan configurado
-var popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
-var popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+document.addEventListener('DOMContentLoaded', function () {
+    var popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+    var popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+});
 
 
 // Validación de formulario
