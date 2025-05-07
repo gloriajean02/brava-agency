@@ -4,7 +4,6 @@
 
 /* mainNav en pantallas pequeñas (menos de 992px) */
 nav#mainNav {
-    /* position: absolute; */
     top: 0;
     left: 0;
     right: 0;
@@ -19,7 +18,7 @@ nav#mainNav a {
 }
 
 
-/* mainNav en pantallas grandes (más de 992px) */
+/* Nav en pantallas grandes (más de 992px) */
 @media (min-width:992px) {
     nav#mainNav {
         background: transparent !important;
@@ -32,6 +31,40 @@ nav#mainNav a {
     nav#mainNav .dropdown-menu .dropdown-item {
         color: black !important;
     }
+
+    nav#mainNav {
+        background: transparent !important;
+    }
+
+    nav#mainNav .nav-link,
+    nav#mainNav .brand-text {
+        color: white !important;
+    }
+
+    nav#mainNav.navbar-scroll {
+        background-color: white !important;
+    }
+
+    nav#mainNav.navbar-scroll .nav-link,
+    nav#mainNav.navbar-scroll .brand-text {
+        color: black !important;
+    }
+
+}
+
+/* Configuraciones del header */
+a .navbar-brand {
+    margin-left: 0px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+header#mainHeader {
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    background: no-repeat center center;
+    background-size: cover;
+    color: white;
 
 }
 
@@ -67,7 +100,7 @@ nav#mainNav a {
 
 }
 
-/* Pantallas medianas o menores (md y abajo) */
+/* texto cabecera en pantallas medianas o menores (md y abajo) */
 @media (max-width: 991.98px) {
 
     #line1,
@@ -84,7 +117,7 @@ nav#mainNav a {
     }
 }
 
-/* Pantallas pequeñas (sm y abajo) */
+/* texto cabecera en pantallas pequeñas (sm y abajo) */
 @media (max-width: 767.98px) {
 
     #line1,
@@ -101,7 +134,7 @@ nav#mainNav a {
     }
 }
 
-/* Pantallas muy pequeñas (xs: móviles pequeños) */
+/* texto cabecera en pantallas muy pequeñas */
 @media (max-width: 575.98px) {
 
     #line1,
@@ -118,27 +151,12 @@ nav#mainNav a {
     }
 }
 
-
-a .navbar-brand {
-    margin-left: 0px;
-    font-family: "Bebas Neue", sans-serif;
-}
-
-header#mainHeader {
-    position: relative;
-    padding-top: 200px;
-    padding-bottom: 100px;
-    background: no-repeat center center;
-    background-size: cover;
-    color: white;
-
-}
-
 #footer a {
     color: white;
     text-decoration: none;
 }
 
+/* custom del carousel */
 .carousel-caption h1 {
     font-family: "Bebas Neue", sans-serif;
     font-size: 3rem;
@@ -152,6 +170,7 @@ header#mainHeader {
     }
 }
 
+/* img camara en sobre-brava en pantallas pequeñas */
 @media (max-width: 767.98px) {
 
     .img-camara {
@@ -160,28 +179,7 @@ header#mainHeader {
 
 }
 
-/* ✅ Solo en pantallas grandes: fondo transparente al inicio, letras blancas */
-@media (min-width: 992px) {
-    nav#mainNav {
-        background: transparent !important;
-    }
-
-    nav#mainNav .nav-link,
-    nav#mainNav .brand-text {
-        color: white !important;
-    }
-
-    nav#mainNav.navbar-scroll {
-        background-color: white !important;
-    }
-
-    nav#mainNav.navbar-scroll .nav-link,
-    nav#mainNav.navbar-scroll .brand-text {
-        color: black !important;
-    }
-
-}
-
+/* style seccion equipo */
 .img-equipo {
     max-width: 250px;
     padding-bottom: 20px;
@@ -193,10 +191,12 @@ header#mainHeader {
     max-width: 300px;
 }
 
+/* palabras especiales en rojo */
 span {
     color: #c41230;
 }
 
+/* styles de las card de servicios */
 .servicio {
     color: black;
     text-decoration: none;
@@ -207,3 +207,8 @@ span {
     text-decoration: none;
 }
 
+/* custom del popover */
+.popover-custom .popover-header {
+    background-color: var(--bs-danger-bg-subtle);
+    font-weight: bold;
+}
